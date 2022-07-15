@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                   DateTime? pickedDate = await showDatePicker(
                       context: context,
                        initialDate: DateTime.now(), //get today's date
-                      firstDate:DateTime.now(), //DateTime.now() - not to allow to choose before today.
+                      firstDate: DateTime(2000), //DateTime.now() - not to allow to choose before today.
                       lastDate: DateTime(2101)
                   );
                   
